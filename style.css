@@ -11,7 +11,7 @@ html {
 
 body {
     font-family: Georgia, "Times New Roman", serif;
-    background: #f3ead7;
+    background: #f2e5c7;
     color: #263238;
     line-height: 1.7;
 }
@@ -20,13 +20,13 @@ body {
 header {
     min-height: 72vh;
     background:
-        linear-gradient(rgba(12, 24, 36, 0.86), rgba(12, 24, 36, 0.9)),
+        linear-gradient(rgba(13, 25, 38, 0.88), rgba(13, 25, 38, 0.92)),
         url("imagenes/fondo.jpg");
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
-    padding: 85px 25px;
+    padding: 90px 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,36 +34,36 @@ header {
 }
 
 header h1 {
-    font-size: 3.3rem;
+    font-size: 3.4rem;
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom: 18px;
-    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.55);
 }
 
 .subtitulo-portada {
     max-width: 850px;
     margin: 0 auto;
-    font-size: 1.3rem;
+    font-size: 1.32rem;
     font-style: italic;
     color: #eadfcb;
 }
 
 .datos-portada {
-    margin: 35px auto 0;
+    margin: 38px auto 0;
     padding: 22px 30px;
     max-width: 850px;
-    background: rgba(255, 255, 255, 0.09);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    border-radius: 14px;
-    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
 }
 
 .datos-portada p {
     margin: 6px 0;
 }
 
-/* NAVEGACIÓN */
+/* NAV */
 nav {
     position: sticky;
     top: 0;
@@ -71,21 +71,21 @@ nav {
     background: #111c27;
     padding: 14px 16px;
     text-align: center;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.28);
 }
 
 nav a {
     display: inline-block;
     color: #f4ead8;
     text-decoration: none;
-    margin: 5px 5px;
+    margin: 5px 4px;
     padding: 8px 12px;
     border-radius: 22px;
     font-size: 0.8rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.4px;
-    transition: 0.25s;
+    transition: 0.25s ease;
 }
 
 nav a:hover {
@@ -95,20 +95,20 @@ nav a:hover {
 
 /* CONTENIDO */
 main {
-    max-width: 1100px;
-    margin: 45px auto;
-    padding: 0 22px;
+    max-width: 1120px;
+    margin: 55px auto;
+    padding: 0 24px;
 }
 
 /* SECCIONES */
 section {
     background: #fffaf0;
-    margin-bottom: 45px;
-    padding: 42px;
-    border-radius: 16px;
+    margin-bottom: 55px;
+    padding: 46px;
+    border-radius: 18px;
     border: 1px solid #d8c7aa;
-    box-shadow: 0 8px 24px rgba(65, 45, 25, 0.15);
-    scroll-margin-top: 95px;
+    box-shadow: 0 10px 28px rgba(65, 45, 25, 0.16);
+    scroll-margin-top: 100px;
 }
 
 section p {
@@ -120,8 +120,8 @@ section p {
 h2 {
     color: #7a2e2e;
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 28px;
+    font-size: 2.05rem;
+    margin-bottom: 30px;
     padding-bottom: 14px;
     border-bottom: 4px double #7a2e2e;
 }
@@ -129,15 +129,15 @@ h2 {
 h3 {
     color: #16293b;
     font-size: 1.35rem;
-    margin: 35px 0 20px;
+    margin: 36px 0 20px;
     padding-left: 14px;
-    border-left: 6px solid #8a5a34;
+    border-left: 6px solid #9b6b3d;
 }
 
 /* IMÁGENES */
 .img-box {
     text-align: center;
-    margin: 32px 0;
+    margin: 36px auto;
 }
 
 figure {
@@ -147,20 +147,20 @@ figure {
 
 img {
     width: 100%;
-    max-width: 720px;
-    max-height: 430px;
+    max-width: 740px;
+    max-height: 450px;
     object-fit: contain;
     background: #efe2c7;
     padding: 10px;
-    border: 8px solid white;
-    border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    border: 8px solid #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.20);
 }
 
 figcaption {
     margin-top: 10px;
     color: #6d6257;
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     font-style: italic;
     text-align: center;
 }
@@ -169,27 +169,27 @@ figcaption {
 .grid-tarjetas {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 22px;
-    margin: 30px 0;
+    gap: 24px;
+    margin: 32px 0;
 }
 
 .tarjeta {
     background: #f7efe0;
     padding: 24px;
-    border-radius: 14px;
+    border-radius: 16px;
     border-left: 6px solid #7a2e2e;
-    box-shadow: 0 5px 15px rgba(70, 45, 25, 0.12);
-    transition: 0.25s;
+    box-shadow: 0 6px 16px rgba(70, 45, 25, 0.14);
+    transition: 0.25s ease;
 }
 
 .tarjeta:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 22px rgba(70, 45, 25, 0.18);
+    box-shadow: 0 12px 26px rgba(70, 45, 25, 0.20);
 }
 
 .tarjeta h3 {
     color: #7a2e2e;
-    font-size: 1.15rem;
+    font-size: 1.14rem;
     margin: 0 0 10px;
     padding: 0;
     border-left: none;
@@ -203,8 +203,8 @@ figcaption {
 
 /* DATOS DUROS */
 .datos-importantes {
+    background: linear-gradient(135deg, #fff4dc, #fffaf0);
     border: 2px solid #7a2e2e;
-    background: #fff6e5;
 }
 
 .datos-importantes h2 {
@@ -212,17 +212,21 @@ figcaption {
 }
 
 .datos-importantes .tarjeta {
-    background: #fffaf0;
+    background: white;
     border-left: 6px solid #16293b;
 }
 
-/* TABLA COMPARATIVA */
+.datos-importantes .tarjeta h3 {
+    color: #16293b;
+}
+
+/* TABLA */
 .table-wrapper {
     width: 100%;
     overflow-x: auto;
-    margin-top: 25px;
-    border-radius: 12px;
-    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+    margin-top: 28px;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.14);
 }
 
 table {
@@ -245,6 +249,7 @@ td {
     padding: 16px;
     border: 1px solid #d8c7aa;
     vertical-align: top;
+    font-size: 0.98rem;
 }
 
 td:first-child {
@@ -279,19 +284,19 @@ a:hover {
 .btn-arriba {
     display: block;
     width: fit-content;
-    margin: 10px auto 45px;
-    padding: 12px 24px;
-    background: #7a2e2e;
+    margin: 5px auto 50px;
+    padding: 13px 26px;
+    background: #16293b;
     color: white;
     text-decoration: none;
-    border-radius: 25px;
+    border-radius: 28px;
     font-weight: bold;
-    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.18);
-    transition: 0.25s;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.22);
+    transition: 0.25s ease;
 }
 
 .btn-arriba:hover {
-    background: #16293b;
+    background: #7a2e2e;
     color: white;
     transform: translateY(-3px);
 }
@@ -301,8 +306,8 @@ footer {
     background: #111c27;
     color: #f4ead8;
     text-align: center;
-    padding: 45px 20px;
-    margin-top: 60px;
+    padding: 48px 20px;
+    margin-top: 65px;
     border-top: 7px solid #7a2e2e;
 }
 
@@ -315,11 +320,11 @@ footer p {
 @media (max-width: 800px) {
     header {
         min-height: auto;
-        padding: 65px 20px;
+        padding: 68px 20px;
     }
 
     header h1 {
-        font-size: 2.4rem;
+        font-size: 2.35rem;
     }
 
     .subtitulo-portada {
@@ -327,11 +332,11 @@ footer p {
     }
 
     section {
-        padding: 30px;
+        padding: 32px;
     }
 
     h2 {
-        font-size: 1.7rem;
+        font-size: 1.75rem;
     }
 }
 
@@ -342,12 +347,12 @@ footer p {
     }
 
     header {
-        padding: 52px 16px;
+        padding: 55px 16px;
     }
 
     header h1 {
         font-size: 1.75rem;
-        letter-spacing: 1.3px;
+        letter-spacing: 1.2px;
     }
 
     .subtitulo-portada {
@@ -361,29 +366,29 @@ footer p {
 
     nav {
         display: flex;
-        overflow-x: auto;
-        gap: 8px;
-        padding: 12px;
-        text-align: left;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 7px;
+        padding: 11px;
     }
 
     nav a {
-        white-space: nowrap;
         margin: 0;
-        font-size: 0.72rem;
-        padding: 8px 11px;
+        padding: 7px 10px;
+        font-size: 0.68rem;
+        white-space: nowrap;
     }
 
     main {
-        margin: 25px auto;
+        margin: 28px auto;
         padding: 0 12px;
     }
 
     section {
-        padding: 22px 18px;
-        margin-bottom: 28px;
-        border-radius: 12px;
-        scroll-margin-top: 85px;
+        padding: 24px 18px;
+        margin-bottom: 34px;
+        border-radius: 14px;
+        scroll-margin-top: 115px;
     }
 
     section p {
@@ -409,30 +414,39 @@ footer p {
         padding: 18px;
     }
 
+    .tarjeta h3 {
+        font-size: 1.05rem;
+    }
+
     img {
         max-height: none;
         padding: 6px;
         border-width: 5px;
+        border-radius: 10px;
+    }
+
+    figcaption {
+        font-size: 0.8rem;
     }
 
     table {
-        min-width: 680px;
+        min-width: 700px;
     }
 
     th,
     td {
         padding: 13px;
-        font-size: 0.9rem;
+        font-size: 0.88rem;
     }
 
     .btn-arriba {
-        margin-bottom: 30px;
-        padding: 11px 20px;
+        margin-bottom: 34px;
+        padding: 11px 21px;
         font-size: 0.9rem;
     }
 
     footer {
-        padding: 35px 15px;
+        padding: 38px 15px;
     }
 
     footer p {
