@@ -18,13 +18,15 @@ body {
 
 /* PORTADA */
 header {
-    min-height: 70vh;
-    background: linear-gradient(rgba(12, 24, 36, 0.88), rgba(12, 24, 36, 0.88)), url("imagenes/fondo.jpg");
+    min-height: 72vh;
+    background:
+        linear-gradient(rgba(12, 24, 36, 0.86), rgba(12, 24, 36, 0.9)),
+        url("imagenes/fondo.jpg");
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
-    padding: 80px 25px;
+    padding: 85px 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,27 +34,28 @@ header {
 }
 
 header h1 {
-    font-size: 3.2rem;
+    font-size: 3.3rem;
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom: 18px;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
 }
 
 .subtitulo-portada {
-    max-width: 800px;
+    max-width: 850px;
     margin: 0 auto;
     font-size: 1.3rem;
     font-style: italic;
-    color: #e8dcc8;
+    color: #eadfcb;
 }
 
 .datos-portada {
     margin: 35px auto 0;
-    padding: 20px 28px;
-    max-width: 800px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.22);
-    border-radius: 12px;
+    padding: 22px 30px;
+    max-width: 850px;
+    background: rgba(255, 255, 255, 0.09);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 14px;
     backdrop-filter: blur(4px);
 }
 
@@ -75,13 +78,13 @@ nav a {
     display: inline-block;
     color: #f4ead8;
     text-decoration: none;
-    margin: 5px 6px;
+    margin: 5px 5px;
     padding: 8px 12px;
-    border-radius: 20px;
-    font-size: 0.82rem;
+    border-radius: 22px;
+    font-size: 0.8rem;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.4px;
     transition: 0.25s;
 }
 
@@ -90,7 +93,7 @@ nav a:hover {
     color: white;
 }
 
-/* CONTENIDO PRINCIPAL */
+/* CONTENIDO */
 main {
     max-width: 1100px;
     margin: 45px auto;
@@ -137,6 +140,11 @@ h3 {
     margin: 32px 0;
 }
 
+figure {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 img {
     width: 100%;
     max-width: 720px;
@@ -149,7 +157,7 @@ img {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
 }
 
-.pie-foto {
+figcaption {
     margin-top: 10px;
     color: #6d6257;
     font-size: 0.9rem;
@@ -179,11 +187,33 @@ img {
     box-shadow: 0 10px 22px rgba(70, 45, 25, 0.18);
 }
 
-.tarjeta strong {
-    display: block;
+.tarjeta h3 {
     color: #7a2e2e;
     font-size: 1.15rem;
-    margin-bottom: 8px;
+    margin: 0 0 10px;
+    padding: 0;
+    border-left: none;
+}
+
+.tarjeta p {
+    margin: 0;
+    font-size: 1rem;
+    text-align: left;
+}
+
+/* DATOS DUROS */
+.datos-importantes {
+    border: 2px solid #7a2e2e;
+    background: #fff6e5;
+}
+
+.datos-importantes h2 {
+    color: #7a2e2e;
+}
+
+.datos-importantes .tarjeta {
+    background: #fffaf0;
+    border-left: 6px solid #16293b;
 }
 
 /* TABLA COMPARATIVA */
@@ -245,6 +275,27 @@ a:hover {
     color: #16293b;
 }
 
+/* BOTÓN VOLVER ARRIBA */
+.btn-arriba {
+    display: block;
+    width: fit-content;
+    margin: 10px auto 45px;
+    padding: 12px 24px;
+    background: #7a2e2e;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.18);
+    transition: 0.25s;
+}
+
+.btn-arriba:hover {
+    background: #16293b;
+    color: white;
+    transform: translateY(-3px);
+}
+
 /* FOOTER */
 footer {
     background: #111c27;
@@ -260,11 +311,7 @@ footer p {
     font-size: 0.95rem;
 }
 
-footer em {
-    color: #d8c7aa;
-}
-
-/* RESPONSIVE TABLET */
+/* TABLET */
 @media (max-width: 800px) {
     header {
         min-height: auto;
@@ -288,19 +335,19 @@ footer em {
     }
 }
 
-/* RESPONSIVE CELULAR */
+/* CELULAR */
 @media (max-width: 600px) {
     body {
         line-height: 1.6;
     }
 
     header {
-        padding: 50px 16px;
+        padding: 52px 16px;
     }
 
     header h1 {
-        font-size: 1.8rem;
-        letter-spacing: 1.5px;
+        font-size: 1.75rem;
+        letter-spacing: 1.3px;
     }
 
     .subtitulo-portada {
@@ -350,6 +397,7 @@ footer em {
 
     h3 {
         font-size: 1.15rem;
+        margin-top: 28px;
     }
 
     .grid-tarjetas {
@@ -365,6 +413,22 @@ footer em {
         max-height: none;
         padding: 6px;
         border-width: 5px;
+    }
+
+    table {
+        min-width: 680px;
+    }
+
+    th,
+    td {
+        padding: 13px;
+        font-size: 0.9rem;
+    }
+
+    .btn-arriba {
+        margin-bottom: 30px;
+        padding: 11px 20px;
+        font-size: 0.9rem;
     }
 
     footer {
