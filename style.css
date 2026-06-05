@@ -22,12 +22,12 @@ body {
 /* Accesibilidad: Enlace de salto */
 .skip-link {
     position: absolute;
-    top: -40px;
+    top: -100px;
     left: 0;
     background: var(--color-rojo);
     color: white;
-    padding: 8px;
-    z-index: 2000;
+    padding: 10px;
+    z-index: 3000;
     transition: top 0.3s;
 }
 .skip-link:focus { top: 0; }
@@ -111,6 +111,7 @@ section {
     border-radius: 4px;
     box-shadow: var(--sombra);
     border: 1px solid #dcd0b9;
+    scroll-margin-top: 100px; /* Evita que el menú tape el título */
 }
 
 h2 {
